@@ -1,26 +1,12 @@
 
 package desafio.bootcamp.dominio.cursos;
 
-public class Curso {
-    private String titulo;
-    private String descricao;
+import desafio.bootcamp.dominio.conteudos.Conteudo;
+
+public class Curso extends Conteudo{
+    
     private int cargaHoraria;
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
 
     public int getCargaHoraria() {
         return cargaHoraria;
@@ -32,9 +18,15 @@ public class Curso {
 
     @Override
     public String toString() {
-        return "==== Curso === " + "\ntitulo = " + titulo + "\n"
-                + "descricao = " + descricao + "\ncargaHoraria = " + cargaHoraria
+        return "==== Curso === " + "\ntitulo = " + super.getTitulo() + "\n"
+                + "descricao = " + super.getDescricao() + 
+                "\ncargaHoraria = " + cargaHoraria
                 + "\n";
+    }
+
+    @Override
+    public double calcularXp() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
