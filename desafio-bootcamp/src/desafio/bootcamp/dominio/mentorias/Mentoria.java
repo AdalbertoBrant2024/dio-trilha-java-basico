@@ -35,8 +35,8 @@ public class Mentoria {
     @Override
     public String toString() {
         return "*** Mentoria *** " 
-                + "\ntitulo = " + titulo + ""
-                + "\n descricao = " + descricao + 
+                + "\ntitulo = " + titulo 
+                + "\ndescricao = " + descricao + 
                 "\ndata = " + data + "\n";
     }
     
