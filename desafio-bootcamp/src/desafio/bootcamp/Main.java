@@ -25,6 +25,10 @@ public class Main {
         System.out.println(curso.toString());
         System.out.println("--------------------");
         System.out.println(mentoria.toString());
+        System.out.println("--------------------");
+        System.out.println("Xp do Curso -> "+curso.calcularXp());
+        System.out.println("--------------------");
+        System.out.println("Xp da Mentoria -> "+ mentoria.calcularXp());
     }
     
 }
