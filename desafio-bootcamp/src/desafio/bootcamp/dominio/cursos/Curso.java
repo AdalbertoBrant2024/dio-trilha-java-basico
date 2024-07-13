@@ -26,7 +26,7 @@ public class Curso extends Conteudo{
 
     @Override
     public double calcularXp() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return XP_PADRAO * cargaHoraria;
     }
     
     
